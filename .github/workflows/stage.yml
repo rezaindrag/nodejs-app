@@ -23,7 +23,7 @@ jobs:
       #     username: ${{ secrets.DOCKERHUB_USERNAME }}
       #     password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
-      - name: Build and push
+      - name: Publish to Docker Hub
         uses: docker/build-push-action@v1
         with:
           sername: ${{ secrets.DOCKERHUB_USERNAME }}
